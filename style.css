@@ -7,6 +7,10 @@ body {
     color: #fff;
 }
   
+* {
+    box-sizing: border-box;
+  }
+  
  h1 {
     font-size: 30px;
     padding-left: 30px;
