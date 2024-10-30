@@ -4,6 +4,16 @@
 <head>
   <link rel="stylesheet" type="text/css" href="style.css" />
 <link rel="stylesheet" href="https://motohiro4649.github.io/ojisantokomusume/style.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script>
+$(window).on('load resize', function(){
+  setTimeout(function(){
+    var height = $('body').height();
+    window.parent.postMessage(height, 'https://motohiro4649.github.io/ojisantokomusume/');
+  },500);
+});
+</script>
 </head>
 <html>
   <body>
