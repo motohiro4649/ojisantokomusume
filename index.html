@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+ <style>
+/*------------main-tag--------------*/
+zepp  {
+  background-color: #009bfd;
+  width: 100%;
+  color: #fff;
+}
+
+zepp h1 {
+  font-size: 30px;
+  padding-left: 30px;
+  text-align: center;
+}
+
+
+zepp h2 {
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+
+zepp h3 {
+  padding: 30px;
+  text-align: center;
+}
+
+
+.flex-column {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-direction: column;
+  padding:0;
+  margin: 20px auto;
+}
+
+.add-padding {
+  margin: 20px 0;
+}
+
+
+/*-------topに戻るボタン----------*/
+#page_top{
+  display: none;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background: #00B000;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+#page_top:hover{
+  background-color: rgba(56, 232, 56, 0.85);
+}
+
+
+#page_top p{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  margin: 0;
+}
+
+#page_top p::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -5px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+#page_top p::before:hover{
+  color:#fff;
+}
+
+/*---------------first-view----------------*/
+
+.top-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("https://fanpla-jp.s3.amazonaws.com/prod/public/fcopen/contents/banner/7200745c0df33b29c9a2de5fbaa3c7b4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.massage {
+  text-align: center;
+}
+
+.top-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.contents-wrapper {
+  background-color: #000;
+  z-index: 50;
+}
+
+/*------------------ZEPPへの想い page----------------*/
+.history-wrapper {
+  position: relative;
+  padding:30px;
+  background-image: url('../img/top-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  background-color: #009bfd;
+  z-index: 50;
+}
+
+.history-container {
+  padding:0 30px;
+  font-size: 20px;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.info-container p {
+  font-size: 20px;
+}
+
+/*------------------Ticket page----------------*/
+
+.Advanced-tickets-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction:row;
+  flex-wrap: wrap;
+  margin:0;
+  padding:30px;
+  background-color: #009bfd;
+}
+
+.banner img {
+ width:100%;
+}
+
+.General-tickets-container {
+  background-image: url('img/135726.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+
+.ticket-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction:column;
+  flex-wrap: wrap;
+  margin:0;
+}
+
+.ticket-box {
+  width:80%;
+  max-width:1000px;
+  max-height:400px;
+  background-color: #9edc8c;
+  opacity: 0.85;
+  margin:0 0 50px 0;
+}
+
+.ticket-box h3 {
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.ticket-box p {
+  text-align: center;
+  font-size: 30px;
+}
+
+.button-ticket {
+  display: block;
+  width: 80%;
+  background: linear-gradient(to right, #00bfff 0%, #7fffd4 45%, #fffacd 100%);
+  background-size: 200% auto;  
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  transition: .5s;
+  margin: 20px auto;
+  margin: 20px auto;
+  border: solid 2px #191970;
+  box-shadow: 0 5px 0 #191970;
+}
+
+.button-ticket:hover {
+  color: #191970;
+  transform: translateY(5px);
+  box-shadow: 0 0 0 #191970;
+  background-position: center;
+}
+
+/*------------------Cloudfounding----------------*/
+.cloudfounding-container {
+  background-image: url('img/25074538.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  padding:30px;
+}
+
+</style>
+
+    <div class="zepp">
+      <!--
+      <div class="top-wrapper">
+        <div class="top-image"></div>
+      
+      </div>
+      -->
+      <div class="contents-wrapper">
+  
+        <div id="history" class="history-wrapper">
+          <h1>ZEPPへの想い</h1>
+          <div class="history-container">
+            <p>親譲りの無鉄砲で小供の時から損ばかりしている。
+              小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。
+              なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。
+              新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、
+              そこから飛び降りる事は出来まい。弱虫やーい。と囃したからである。
+              小使に負ぶさって帰って来た時、おやじが大きな眼をして二階ぐらいから飛び降りて腰を抜かす奴があるかと云ったから、
+              この次は抜かさずに飛んで見せますと答えた。（青空文庫より）</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+
+           <div class="Advanced-tickets-container">
+            <h1>Ticket</h1>
+            <div class="banner">
+              <img src="img/fanclub-ticket-banner.png" alt="image">
+            </div>
+          </div>
+            <div class="General-tickets-container">
+              <h2>一般販売</h2>
+              <div class="ticket-container">
+                <div class="ticket-box">
+                  <h3>スタンディングチケット</h3>
+                  <P>座席数799/5,800円</P>
+                  <a href="#" class="button-ticket">Click here</a>
+
+                </div>
+                <div class="ticket-box">
+                  <h3>通常椅子席チケット</h3>
+                  <P>座席数799/5,800円</P>
+                  <a href="#" class="button-ticket">Click here</a>
+
+                </div>
+                <div class="ticket-box">
+                  <h3>前方中央確約チケット</h3>
+                  <P>座席数799/5,800円</P>
+                  <a href="#" class="button-ticket">Click here</a>
+
+                </div>
+              </div>
+             </div>
+
+             <div class="cloudfounding-container">
+              <h2>クラウドファウンディング</h2>
+              <div class="banner">
+                <img src="img/cloud.png" alt="image">
+              </div>
+
+            
+             </div>
+             
+        </div>
+
+
+      </div>
+    </div>
