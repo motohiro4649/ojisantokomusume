@@ -1,15 +1,13 @@
-body {
-    
-}
+
 
 /*------------main-tag--------------*/
-zepp  {
+body {
     background-color: #009bfd;
     width: 100%;
     color: #fff;
-  }
+}
   
-  zepp h1 {
+ h1 {
     font-size: 30px;
     padding-left: 30px;
     text-align: center;
