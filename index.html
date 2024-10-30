@@ -7,16 +7,18 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 <script>
-window.addEventListener('load', postSize, false);
-window.addEventListener('resize', postSize, false);
-function postSize(e){
-  setTimeout(function(){
-    var target = parent.postMessage ? parent : (parent.document.postMessage ? parent.document : undefined);
-    if (typeof target != 'undefined' && document.documentElement.offsetHeight)
-    var j = {'execFlg':'autoHeight', 'height':document.documentElement.offsetHeight};
-    target.postMessage(j, '*');
-  },0);
-}
+const postIframeHeight = () => {
+    const height = document.documentElement.offsetHeight;
+    window.parent.postMessage({ iframeHeight: height }, 'https://motohiro4649.github.io/ojisantokomusume/'); // https://example.comはiframeを埋め込むサイトのオリジンに置き換える
+};
+
+window.addEventListener('DOMContentLoaded', () => {
+    postIframeHeight();
+});
+
+window.addEventListener('resize', () => {
+    postIframeHeight();
+});
 </script>
 
 </head>
