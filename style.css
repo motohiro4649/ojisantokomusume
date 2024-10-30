@@ -4,6 +4,7 @@
 body {
     background-color: #009bfd;
     width: 100%;
+    margin:0;
     color: #fff;
 }
   
@@ -132,7 +133,6 @@ body {
   }
   
   .history-container {
-    padding:0 30px;
     font-size: 20px;
     display: flex;
     justify-content:space-around;
