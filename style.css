@@ -14,19 +14,16 @@ body {
   
  h1 {
     font-size: 30px;
-    padding-left: 30px;
     text-align: center;
   }
   
   
-  zepp h2 {
-    padding: 30px;
+  h2 {
     font-size: 30px;
     text-align: center;
   }
   
-  zepp h3 {
-    padding: 30px;
+  h3 {
     text-align: center;
   }
   
@@ -152,7 +149,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction:row;
+    flex-direction:column;
     flex-wrap: wrap;
     margin:0;
     padding:30px;
