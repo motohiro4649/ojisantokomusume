@@ -118,7 +118,6 @@ body {
   
   /*------------------ZEPPへの想い page----------------*/
   .history-wrapper {
-    position: relative;
     padding:30px;
     background-image: url('../img/top-image.jpg');
     background-size: cover;
@@ -126,7 +125,6 @@ body {
     background-position: center;
     width: 100%;
     background-color: #009bfd;
-    z-index: 50;
   }
   
   .history-container {
