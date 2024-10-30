@@ -6,11 +6,17 @@
 <link rel="stylesheet" href="https://motohiro4649.github.io/ojisantokomusume/style.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-<script type="text/javascript">
-  window.onload = function() {
-      var height = document.getElementsByTagName("html")[0].scrollHeight;
-      window.parent.postMessage(["setHeight", height], "*");
-  }
+<script>
+window.addEventListener('load', postSize, false);
+window.addEventListener('resize', postSize, false);
+function postSize(e){
+  setTimeout(function(){
+    var target = parent.postMessage ? parent : (parent.document.postMessage ? parent.document : undefined);
+    if (typeof target != 'undefined' && document.documentElement.offsetHeight)
+    var j = {'execFlg':'autoHeight', 'height':document.documentElement.offsetHeight};
+    target.postMessage(j, '*');
+  },0);
+}
 </script>
 
 </head>
