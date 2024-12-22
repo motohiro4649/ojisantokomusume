@@ -1,40 +1,41 @@
-
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <link rel="stylesheet" type="text/css" href="style.css" />
-<link rel="stylesheet" href="https://motohiro4649.github.io/ojisantokomusume/style.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://motohiro4649.github.io/ojisantokomusume/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-<script>
-const postIframeHeight = () => {
-    const height = document.documentElement.offsetHeight;
-    window.parent.postMessage({ iframeHeight: height }, 'https://motohiro4649.github.io/ojisantokomusume/'); // https://example.comはiframeを埋め込むサイトのオリジンに置き換える
-};
+  <script>
+    const postIframeHeight = () => {
+      const height = document.documentElement.offsetHeight;
+      window.parent.postMessage({ iframeHeight: height }, 'https://motohiro4649.github.io/ojisantokomusume/'); // https://example.comはiframeを埋め込むサイトのオリジンに置き換える
+    };
 
-window.addEventListener('DOMContentLoaded', () => {
-    postIframeHeight();
-});
+    window.addEventListener('DOMContentLoaded', () => {
+      postIframeHeight();
+    });
 
-window.addEventListener('resize', () => {
-    postIframeHeight();
-});
-</script>
+    window.addEventListener('resize', () => {
+      postIframeHeight();
+    });
+  </script>
 
 </head>
 <html>
-  <body>
-    <div class="zepp">
-      <div class="top-wrapper">
-        <div class="top-image"></div>
-      
-      </div>
-      <div class="contents-wrapper">
 
-        <div class="history-wrapper">
-          <img src="https://motohiro4649.github.io/ojisantokomusume/img/page_241223_PC_02.png" alt="Responsive Image">
+<body>
+  <div class="zepp">
+    <div class="top-wrapper">
+      <div class="top-image"></div>
 
-            <!--
+    </div>
+    <div class="contents-wrapper">
+
+      <div class="history-wrapper">
+        <img src="https://motohiro4649.github.io/ojisantokomusume/img/page_241223_PC_02.png" alt="Responsive Image">
+
+        <!--
           <h1>ZEPPへの想い</h1>
           <div class="history-container">
             <p>親譲りの無鉄砲で小供の時から損ばかりしている。
@@ -53,17 +54,17 @@ window.addEventListener('resize', () => {
           </div>
           -->
 
-    
-           <div class="Advanced-tickets-container">
-            <img src="https://motohiro4649.github.io/ojisantokomusume/img/page_241223_PC_03.png" alt="Responsive Image">
 
-            <!--
+        <div class="Advanced-tickets-container">
+          <img src="https://motohiro4649.github.io/ojisantokomusume/img/page_241223_PC_03.png" alt="Responsive Image">
+
+          <!--
             <h1>Ticket</h1>
             <div class="banner">
               <img src="img/fanclub-ticket-banner.png" alt="image">
             </div>
             -->
-          </div>
+          <!--
             <div class="General-tickets-container">
               <h2>一般販売</h2>
               <div class="ticket-container">
@@ -94,13 +95,14 @@ window.addEventListener('resize', () => {
                 <img src="img/cloud.png" alt="image">
               </div>
 
-            
-             </div>
-             
-        
-            </div>
-
+            -->
+        </div>
       </div>
+
     </div>
-  </body>
-  </html>
+
+  </div>
+  </div>
+</body>
+
+</html>
