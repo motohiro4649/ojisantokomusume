@@ -118,17 +118,6 @@ body {
   }
   
   .contents-wrapper {
-    background-image: url("https://motohiro4649.github.io/ojisantokomusume/img/ojikom_kv_1st_241012_back.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    background-color: #4a4a4b;
-  }
-  
-  /*------------------ZEPPへの想い page----------------*/
-  .history-wrapper {
     padding: 30px;
     background-image: url("https://motohiro4649.github.io/ojisantokomusume/img/ojikom_kv_1st_241012_back.jpg");
     background-size: cover;
@@ -136,6 +125,20 @@ body {
     background-position: center;
     width: 100%;
     min-height: 100vh;
+    background-color: #4a4a4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*------------------ZEPPへの想い page----------------*/
+  .history-wrapper {
+    padding: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100％;
     background-color: #4a4a4b;
     display: flex;
     justify-content: center;
