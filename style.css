@@ -121,11 +121,12 @@ body {
   /*------------------ZEPPへの想い page----------------*/
   .history-wrapper {
     padding:30px;
-    background-image: url('../img/top-image.jpg');
+    background-image: url("https://motohiro4649.github.io/ojisantokomusume/img/ojikom_kv_1st_241012_back.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
+    height: 100%;
     background-color: #4a4a4b;
   }
   
