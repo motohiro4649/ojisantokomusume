@@ -114,8 +114,13 @@ body {
   }
   
   .contents-wrapper {
-    background-color: #000;
-    z-index: 50;
+    background-image: url("https://motohiro4649.github.io/ojisantokomusume/img/ojikom_kv_1st_241012_back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-color: #4a4a4b;
   }
   
   /*------------------ZEPPへの想い page----------------*/
