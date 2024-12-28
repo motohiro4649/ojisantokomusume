@@ -152,6 +152,7 @@ body {
 }
   /*------------------ZEPPへの想い page----------------*/
   .history-wrapper {
+    text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -163,6 +164,7 @@ body {
 }
 
 .history-wrapper-sp {
+  text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -276,6 +278,10 @@ body {
  
 
   /*------------------Goods page----------------*/
+  .goods-wrapper {
+    text-align: center;
+  }
+
   .goods-container {
     display: block;
   }
@@ -359,7 +365,7 @@ body {
       flex-wrap: wrap;
       margin:0;
     }
-    
+
     .goods-container {
       display: none;
     }
