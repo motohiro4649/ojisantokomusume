@@ -127,6 +127,7 @@ body {
   }
   
   .contents-wrapper {
+    background-attachment: fixed;
     padding: 30px;
     background-image: url("https://motohiro4649.github.io/ojisantokomusume/img/ojikom_kv_1st_241012_back.jpg");
     background-size: cover;
