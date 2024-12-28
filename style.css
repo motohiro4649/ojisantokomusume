@@ -1,4 +1,4 @@
-@media screen and (max-width: 959px)
+@media screen and (max-width: 959px){
 /*------------main-tag--------------*/
 body {
     width: 100%;
@@ -152,14 +152,14 @@ body {
     justify-content: center;
     align-items: center;
 }
-  
-.history-wrapper {
-  background-size: none;
+
+.history-wrapper-sp {
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
   height: 100%;
-  display: block;
+  display: none;
   justify-content: center;
   align-items: center;
 }
