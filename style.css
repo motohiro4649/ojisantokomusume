@@ -1,4 +1,4 @@
-
+@media screen and (max-width: 959px)
 /*------------main-tag--------------*/
 body {
     width: 100%;
@@ -272,7 +272,11 @@ body {
   }
 
 
-  @media screen and (min-width: 481px) {
+}
+
+   /*------------------SP----------------------*/
+
+   @media screen and (max-width: 480px) {
     /* 481px以上に適用されるCSS（タブレット用） */
    
     .top-image {
