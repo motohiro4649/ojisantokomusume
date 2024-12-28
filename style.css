@@ -135,7 +135,7 @@ body {
   }
   
   /*------------------ティザー動画----------------*/
-  .video-container {
+  .Teaservideo {
     position: relative;
     width: 100%;
     padding-bottom: 56.25%; /* 16:9 aspect ratio (height/width = 9/16 = 0.5625) */
@@ -143,7 +143,7 @@ body {
     overflow: hidden;
 }
 
-.video-container iframe {
+.Teaservideo iframe {
     position: absolute;
     top: 0;
     left: 0;
