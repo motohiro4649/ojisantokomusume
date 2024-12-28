@@ -284,7 +284,7 @@ body {
     .top-image-sp {
       display: block;
       width: 100%;
-      height: 844px;
+      height: 100vh;
       background: url("https://motohiro4649.github.io/ojisantokomusume/img/page_241223_SP_01.png");
       background-position: center;
       background-repeat: no-repeat;
