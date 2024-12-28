@@ -303,8 +303,18 @@ body {
   }
     .top-image {
       display: none;
+    }  
+
+    .top-image-sp {
+      display: block;
+      width: 100%;
+      height: 100vh;
+      background: url("https://motohiro4649.github.io/ojisantokomusume/img/page_241223_SP_01.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; 
     }
-    
+
     .contents-wrapper {
       background-attachment: fixed;
       padding: 30px;
@@ -321,15 +331,22 @@ body {
     }
       
 
-    .top-image-sp {
-      display: block;
-      width: 100%;
-      height: 100vh;
-      background: url("https://motohiro4649.github.io/ojisantokomusume/img/page_241223_SP_01.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover; 
-    }
+
+  /*------------------ティザー動画----------------*/
+  .Teaservideo {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (height/width = 9/16 = 0.5625) */
+    height: 0;
+    overflow: hidden;
+}
+
+.Teaservideo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
     .history-wrapper {
       background-size: cover;
