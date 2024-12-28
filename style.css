@@ -280,6 +280,10 @@ body {
     display: block;
   }
 
+  .goods-container-sp {
+    display: none;
+  }
+
 
 }
 
