@@ -349,16 +349,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-
-    .history-wrapper {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 100%;
-      height: 100%;
-      display: none;
-      justify-content: center;
-      align-items: center;
     }
 
   .history-wrapper-sp {
