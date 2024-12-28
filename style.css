@@ -359,10 +359,12 @@ body {
       flex-wrap: wrap;
       margin:0;
     }
+    
     .goods-container {
-    display: none;
+      display: none;
     }
-  .goods-container-sp {
-    display: block;
+
+    .goods-container-sp {
+      display: block;
     }
 }
