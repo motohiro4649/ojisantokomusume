@@ -1,5 +1,4 @@
 
-
 /*------------main-tag--------------*/
 body {
     width: 100%;
@@ -63,7 +62,6 @@ body {
     background-color: rgba(56, 232, 56, 0.85);
   }
   
-  
   #page_top p{
     position: relative;
     display: block;
@@ -108,6 +106,17 @@ body {
     background-size: cover; 
   }
   
+  .top-image-sp {
+    display: none;
+    width: 100%;
+    height: 0;
+    padding-top: 66.6%;
+    background: url("https://motohiro4649.github.io/ojisantokomusume/img/page_241223_PC_01.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+  }
+
   .massage {
     text-align: center;
   }
@@ -168,6 +177,15 @@ body {
     margin:0;
   }
   
+  .Advanced-tickets-container-sp {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction:column;
+    flex-wrap: wrap;
+    margin:0;
+  }
+
   .banner img {
    width:100%;
   }
@@ -233,13 +251,96 @@ body {
     background-position: center;
   }
   
-  /*------------------Cloudfounding----------------*/
-  .cloudfounding-container {
-    background-image: url('img/25074538.jpg');
+ 
+
+  /*------------------Goods page----------------*/
+  .goods-container {
+    display: block;
+  }
+
+
+  @media screen and (min-width: 481px) {
+    /* 481px以上に適用されるCSS（タブレット用） */
+   
+    .top-image {
+      display: none;
+      width: 100%;
+      height: 0;
+      padding-top: 66.6%;
+      background: url("https://motohiro4649.github.io/ojisantokomusume/img/page_241223_PC_01.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; 
+    }
+  
+    .top-image-sp {
+      display: block;
+      width: 100%;
+      height: 0;
+      padding-top: 66.6%;
+      background: url("https://motohiro4649.github.io/ojisantokomusume/img/page_241223_PC_01.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; 
+    }
+    .history-wrapper {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+      display: none;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .history-wrapper-sp {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    padding:30px;
+    height: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+   
+  .history-wrapper {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+    .Advanced-tickets-container {
+      display: none;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction:column;
+      flex-wrap: wrap;
+      margin:0;
+    }
+
+    .Advanced-tickets-container-sp {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction:column;
+      flex-wrap: wrap;
+      margin:0;
+    }
+
+
+
+  .goods-container {
+    display: none;
   }
+
+  .goods-container-sp {
+    display: block;
   }
+}
