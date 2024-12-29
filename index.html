@@ -6,7 +6,20 @@
   <link rel="stylesheet" href="https://motohiro4649.github.io/ojisantokomusume/style.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    const postIframeHeight = () => {
+      const height = document.documentElement.offsetHeight;
+      window.parent.postMessage({ iframeHeight: height }, 'https://ojikom.fanpla.jp/feature/zeppshinjuku'); // https://example.comはiframeを埋め込むサイトのオリジンに置き換える
+    };
 
+    window.addEventListener('DOMContentLoaded', () => {
+      postIframeHeight();
+    });
+
+    window.addEventListener('resize', () => {
+      postIframeHeight();
+    });
+  </script>
 
 </head>
 <html>
@@ -20,9 +33,8 @@
     </div>
     <div class="contents-wrapper">
       <div class="Teaservideo">
-        <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/81HTumorB9o?si=fSe_y_3akQMfdhbx" 
-        title="YouTube video player" frameborder="0" allow="accelerometer; 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/81HTumorB9o?si=fSe_y_3akQMfdhbx"
+          title="YouTube video player" frameborder="0" allow="accelerometer; 
         autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
         web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
         </iframe>
@@ -134,22 +146,6 @@
     </div>
 
   </div>
-
-  <script>
-    const postIframeHeight = () => {
-    const height = document.documentElement.offsetHeight;
-    window.parent.postMessage({ iframeHeight: height }, 'https://ojikom.fanpla.jp/feature/zeppshinjuku'); // https://example.comはiframeを埋め込むサイトのオリジンに置き換える
-};
-
-window.addEventListener('DOMContentLoaded', () => {
-    postIframeHeight();
-});
-
-window.addEventListener('resize', () => {
-    postIframeHeight();
-});
-      </script>
-    
 
 </body>
 

@@ -4,52 +4,53 @@
 
 body {
   width: 100%;
-  margin:0;
+  margin: 0;
   color: #fff;
   overflow: hidden;
 }
 
 @media screen and (min-width: 480px) {
-/*------------main-tag--------------*/
+  /*------------main-tag--------------*/
 
-  
- h1 {
+
+  h1 {
     font-size: 30px;
     text-align: center;
   }
-  
-  
+
+
   h2 {
     font-size: 30px;
     text-align: center;
   }
-  
+
   h3 {
     text-align: center;
   }
-  
+
   img {
     max-width: 100%;
     max-height: 100%;
     height: auto;
     width: auto;
-}
+  }
+
   .flex-column {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    padding:0;
+    padding: 0;
     margin: 20px auto;
   }
-  
+
   .add-padding {
     margin: 20px 0;
   }
-  
-  
+
+
   /*-------topに戻るボタン----------*/
-  #page_top{
+  #page_top {
     display: none;
     width: 50px;
     height: 50px;
@@ -60,12 +61,12 @@ body {
     border-radius: 5px;
     z-index: 1000;
   }
-  
-  #page_top:hover{
+
+  #page_top:hover {
     background-color: rgba(56, 232, 56, 0.85);
   }
-  
-  #page_top p{
+
+  #page_top p {
     position: relative;
     display: block;
     width: 50px;
@@ -73,8 +74,8 @@ body {
     text-decoration: none;
     margin: 0;
   }
-  
-  #page_top p::before{
+
+  #page_top p::before {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     content: '\f102';
@@ -91,13 +92,13 @@ body {
     margin: auto;
     text-align: center;
   }
-  
-  #page_top p::before:hover{
-    color:#fff;
+
+  #page_top p::before:hover {
+    color: #fff;
   }
-  
+
   /*---------------first-view----------------*/
-  
+
   .top-image {
     display: block;
     width: 100%;
@@ -106,9 +107,9 @@ body {
     background: url("https://motohiro4649.github.io/ojisantokomusume/img/page_241223_PC_01.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
   }
-  
+
   .top-image-sp {
     display: none;
   }
@@ -116,12 +117,12 @@ body {
   .massage {
     text-align: center;
   }
-  
+
   .top-wrapper {
     position: relative;
     width: 100%;
   }
-  
+
   .contents-wrapper {
     background-attachment: fixed;
     padding: 30px;
@@ -136,23 +137,25 @@ body {
     justify-content: center;
     align-items: center;
   }
-  
+
   /*------------------ティザー動画----------------*/
   .Teaservideo {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio (height/width = 9/16 = 0.5625) */
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio (height/width = 9/16 = 0.5625) */
     height: 0;
     overflow: hidden;
-}
+  }
 
-.Teaservideo iframe {
+  .Teaservideo iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-}
+  }
+
   /*------------------ZEPPへの想い page----------------*/
   .history-wrapper {
     text-align: center;
@@ -164,56 +167,56 @@ body {
     display: block;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.history-wrapper-sp {
-  text-align: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
+  .history-wrapper-sp {
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
 
 
   .history-container {
     font-size: 20px;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     margin: 0 auto;
     padding: 0 30px;
   }
-  
+
   .info-container p {
     font-size: 20px;
   }
-  
+
   /*------------------Ticket page----------------*/
-  
+
   .Advanced-tickets-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction:column;
+    flex-direction: column;
     flex-wrap: wrap;
-    margin:0;
+    margin: 0;
   }
-  
+
   .Advanced-tickets-container-sp {
     display: none;
     justify-content: space-around;
     align-items: center;
-    flex-direction:column;
+    flex-direction: column;
     flex-wrap: wrap;
-    margin:0;
+    margin: 0;
   }
 
-  .Advanced-tickets-container  {
+  .Advanced-tickets-container {
     transition: all 0.3s;
   }
 
@@ -222,42 +225,42 @@ body {
   .Advanced-tickets-container :hover {
     opacity: 0.8;
     transition: all 0.5s;
-    transform:scale(1.2);
+    transform: scale(1.2);
   }
-  
+
   .ticket-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction:column;
+    flex-direction: column;
     flex-wrap: wrap;
-    margin:0;
+    margin: 0;
   }
-  
+
   .ticket-box {
-    width:80%;
-    max-width:1000px;
-    max-height:400px;
+    width: 80%;
+    max-width: 1000px;
+    max-height: 400px;
     background-color: #9edc8c;
     opacity: 0.85;
-    margin:0 0 50px 0;
+    margin: 0 0 50px 0;
   }
-  
+
   .ticket-box h3 {
     font-size: 40px;
     margin-bottom: 0;
   }
-  
+
   .ticket-box p {
     text-align: center;
     font-size: 30px;
   }
-  
+
   .button-ticket {
     display: block;
     width: 80%;
     background: linear-gradient(to right, #00bfff 0%, #7fffd4 45%, #fffacd 100%);
-    background-size: 200% auto;  
+    background-size: 200% auto;
     color: #fff;
     border-radius: 20px;
     padding: 10px 30px;
@@ -270,15 +273,15 @@ body {
     border: solid 2px #191970;
     box-shadow: 0 5px 0 #191970;
   }
-  
+
   .button-ticket:hover {
     color: #191970;
     transform: translateY(5px);
     box-shadow: 0 0 0 #191970;
     background-position: center;
   }
-  
- 
+
+
 
   /*------------------Goods page----------------*/
   .goods-wrapper {
@@ -297,61 +300,63 @@ body {
 
 /*------------------SP----------------------*/
 
-   @media screen and (max-width: 480px) {
-    img {
-      max-width: 100%;
-      max-height: 100%;
-      height: auto;
-      width: auto;
+@media screen and (max-width: 480px) {
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
   }
-    .top-image {
-      display: none;
-    }  
 
-    .top-image-sp {
-      display: block;
-      width: 100%;
-      height: 0;
-      padding-top: 216.4%;
-      background: url("https://motohiro4649.github.io/ojisantokomusume/img/page_241223_SP_01.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover; 
-    }
+  .top-image {
+    display: none;
+  }
 
-    .contents-wrapper {
-      background-attachment: fixed;
-      padding: 30px;
-      background-image: url("https://motohiro4649.github.io/ojisantokomusume/img/ojikom_kv_1st_241012_back.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 100%;
-      min-height: 100vh;
-      background-color: #4a4a4b;
-      display: block;
-      justify-content: center;
-      align-items: center;
-    }
-      
+  .top-image-sp {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-top: 216.4%;
+    background: url("https://motohiro4649.github.io/ojisantokomusume/img/page_241223_SP_01.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .contents-wrapper {
+    background-attachment: fixed;
+    padding: 30px;
+    background-image: url("https://motohiro4649.github.io/ojisantokomusume/img/ojikom_kv_1st_241012_back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #4a4a4b;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
 
 
   /*------------------ティザー動画----------------*/
   .Teaservideo {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio (height/width = 9/16 = 0.5625) */
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio (height/width = 9/16 = 0.5625) */
     height: 0;
     overflow: hidden;
-}
+  }
 
-.Teaservideo iframe {
+  .Teaservideo iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    }
+  }
 
   .history-wrapper-sp {
     background-size: cover;
@@ -373,39 +378,39 @@ body {
     display: none;
     justify-content: center;
     align-items: center;
-    }
-    
-    .Advanced-tickets-container {
-      display: none;
-      justify-content: space-around;
-      align-items: center;
-      flex-direction:column;
-      flex-wrap: wrap;
-      margin:0;
-    }
-    
-    .Advanced-tickets-container-sp {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-direction:column;
-      flex-wrap: wrap;
-      margin:0;
-    }
+  }
 
-    .Advanced-tickets-container  {
-      transition: all 0.3s;
-    }
-  
-    .Advanced-tickets-container :hover {
-      opacity: 0.8;
-    }
+  .Advanced-tickets-container {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+  }
 
-    .goods-container {
-      display: none;
-    }
+  .Advanced-tickets-container-sp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+  }
 
-    .goods-container-sp {
-      display: block;
-    }
+  .Advanced-tickets-container {
+    transition: all 0.3s;
+  }
+
+  .Advanced-tickets-container :hover {
+    opacity: 0.8;
+  }
+
+  .goods-container {
+    display: none;
+  }
+
+  .goods-container-sp {
+    display: block;
+  }
 }
