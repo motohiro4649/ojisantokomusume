@@ -7,14 +7,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script>
-sendHeight();
-
-function sendHeight(){
-  var h = document.documentElement.scrollHeight;
-  parent.postMessage(h, "https://ojikom.fanpla.jp/feature/zeppshinjuku");
-}
-  </script>
 
 </head>
 <html>
@@ -142,6 +134,17 @@ function sendHeight(){
     </div>
 
   </div>
+
+  <script>
+    sendHeight();
+    
+    function sendHeight(){
+      var h = document.documentElement.scrollHeight;
+      parent.postMessage(h, "https://ojikom.fanpla.jp/feature/zeppshinjuku");
+    }
+      </script>
+    
+
 </body>
 
 </html>
