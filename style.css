@@ -214,11 +214,13 @@ body {
 
   .Advanced-tickets-container  {
     transition: all 0.3s;
-    background:#fff; 
   }
+
+
 
   .Advanced-tickets-container :hover {
     opacity: 0.8;
+    transition: all 0.3s;
     transform:scale(1.3);
   }
   
