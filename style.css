@@ -219,9 +219,9 @@ body {
 
 
   .Advanced-tickets-container :hover {
-    opacity: 0.8;
+    opacity: 0.8
     transition: all 0.3s;
-    transform:scale(1.3);
+    transform:scale(1.2);
   }
   
   .ticket-container {
