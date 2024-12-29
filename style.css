@@ -212,16 +212,12 @@ body {
     margin:0;
   }
 
-  .banner img {
-   width:100%;
+  .Advanced-tickets-container  {
+    transition: all 0.3s;
   }
-  
-  .General-tickets-container {
-    background-image: url('img/135726.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
+
+  .Advanced-tickets-container :hover {
+    opacity: 0.8;
   }
   
   .ticket-container {
@@ -389,6 +385,14 @@ body {
       flex-direction:column;
       flex-wrap: wrap;
       margin:0;
+    }
+
+    .Advanced-tickets-container  {
+      transition: all 0.3s;
+    }
+  
+    .Advanced-tickets-container :hover {
+      opacity: 0.8;
     }
 
     .goods-container {
