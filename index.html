@@ -6,20 +6,6 @@
   <link rel="stylesheet" href="https://motohiro4649.github.io/ojisantokomusume/style.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>
-    const postIframeHeight = () => {
-      const height = document.documentElement.offsetHeight;
-      window.parent.postMessage({ iframeHeight: height }, 'https://ojikom.fanpla.jp/feature/zeppshinjuku'); // https://example.comはiframeを埋め込むサイトのオリジンに置き換える
-    };
-
-    window.addEventListener('DOMContentLoaded', () => {
-      postIframeHeight();
-    });
-
-    window.addEventListener('resize', () => {
-      postIframeHeight();
-    });
-  </script>
 
 </head>
 <html>
