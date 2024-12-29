@@ -136,12 +136,18 @@
   </div>
 
   <script>
-    sendHeight();
-    
-    function sendHeight(){
-      var h = document.documentElement.scrollHeight;
-      parent.postMessage(h, "https://ojikom.fanpla.jp/feature/zeppshinjuku");
-    }
+    const postIframeHeight = () => {
+    const height = document.documentElement.offsetHeight;
+    window.parent.postMessage({ iframeHeight: height }, 'https://ojikom.fanpla.jp/feature/zeppshinjuku'); // https://example.comはiframeを埋め込むサイトのオリジンに置き換える
+};
+
+window.addEventListener('DOMContentLoaded', () => {
+    postIframeHeight();
+});
+
+window.addEventListener('resize', () => {
+    postIframeHeight();
+});
       </script>
     
 
