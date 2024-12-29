@@ -8,18 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <script>
-    const postIframeHeight = () => {
-      const height = document.documentElement.offsetHeight;
-      window.parent.postMessage({ iframeHeight: height }, 'https://motohiro4649.github.io/ojisantokomusume/'); // https://example.comはiframeを埋め込むサイトのオリジンに置き換える
-    };
+sendHeight();
 
-    window.addEventListener('DOMContentLoaded', () => {
-      postIframeHeight();
-    });
-
-    window.addEventListener('resize', () => {
-      postIframeHeight();
-    });
+function sendHeight(){
+  var h = document.documentElement.scrollHeight;
+  parent.postMessage(h, "https://ojikom.fanpla.jp/feature/zeppshinjuku");
+}
   </script>
 
 </head>
