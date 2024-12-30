@@ -34,19 +34,6 @@ body {
     width: auto;
   }
 
-  .flex-column {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    padding: 0;
-    margin: 20px auto;
-  }
-
-  .add-padding {
-    margin: 20px 0;
-  }
-
 
   /*-------topに戻るボタン----------*/
   #page_top {
@@ -113,10 +100,6 @@ body {
     display: none;
   }
 
-  .massage {
-    text-align: center;
-  }
-
   .top-wrapper {
     position: relative;
     width: 100%;
@@ -137,7 +120,7 @@ body {
     align-items: center;
   }
 
-  /*------------------ティザー動画----------------*/
+  /*----------------Teaser video----------------*/
   .Teaservideo {
     position: relative;
     width: 100%;
@@ -155,7 +138,7 @@ body {
     height: 100%;
   }
 
-  /*------------------ZEPPへの想い page----------------*/
+  /*------------------history page----------------*/
   .history-wrapper {
     text-align: center;
     background-size: cover;
@@ -222,7 +205,7 @@ body {
 
 
   .Advanced-tickets-container :hover {
-    opacity: 0.8;
+    opacity: 1;
     transition: all 0.5s;
     transform: scale(1.2);
   }
@@ -307,6 +290,8 @@ body {
     width: auto;
   }
 
+  /*-------------first-view-------------*/
+
   .top-image {
     display: none;
   }
@@ -379,6 +364,9 @@ body {
     align-items: center;
   }
 
+  /*--------------Ticket page---------------*/
+
+
   .Advanced-tickets-container {
     display: none;
     justify-content: space-around;
@@ -404,6 +392,8 @@ body {
   .Advanced-tickets-container :hover {
     opacity: 0.8;
   }
+
+  /*------------------Goods page----------------*/
 
   .goods-container {
     display: none;
