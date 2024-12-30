@@ -207,7 +207,11 @@ body {
   .Advanced-tickets-container :hover {
     opacity: 1;
     transition: all 0.5s;
-    transform: scale(1.2);
+    transform: scale(1.1);
+  }
+
+  .Advanced-tickets-container a {
+    padding: 20px 0 20px 0;
   }
 
   .ticket-container {
