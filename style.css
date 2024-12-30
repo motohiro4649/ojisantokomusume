@@ -198,20 +198,20 @@ body {
     margin: 0;
   }
 
-  .Advanced-tickets-container {
+  .Advanced-tickets-container a{
     transition: all 0.3s;
   }
 
 
 
-  .Advanced-tickets-container :hover {
+  .Advanced-tickets-container a:hover {
     opacity: 1;
     transition: all 0.5s;
     transform: scale(1.1);
   }
 
   .Advanced-tickets-container a {
-    padding: 20px 0 20px 0;
+    padding: 30px 0 30px 0;
   }
 
   .ticket-container {
