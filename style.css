@@ -352,7 +352,7 @@ body {
   .contents-wrapper {
     background-attachment: fixed;
     padding: 30px;
-    background-image: url("https://motohiro4649.github.io/ojisantokomusume/img/page_250201_SP_08.jpg");
+    background-image: url("https://motohiro4649.github.io/ojisantokomusume/img/ojikom_kv_1st_241012_back.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -364,6 +364,20 @@ body {
     align-items: center;
   }
 
+  .contents-wrapper2 {
+    background-attachment: fixed;
+    padding: 30px;
+    background-image: url("https://motohiro4649.github.io/ojisantokomusume/img/page_250201_SP_08.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #4a4a4b;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
 
 
   /*------------------ティザー動画----------------*/
