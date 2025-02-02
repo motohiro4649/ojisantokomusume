@@ -335,6 +335,7 @@ body {
   }
 
   .notice {
+    font-weight:bold;
     font-size:16px;
     color:#1f1f1f;
     padding:0 100px 100px 100px;
@@ -499,6 +500,7 @@ body {
     display: block;
   }
   .notice {
+    font-weight:bold;
     font-size:10px;
     color:#1f1f1f;
     padding:0 30px 0 30px;
