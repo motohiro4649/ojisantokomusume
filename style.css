@@ -168,6 +168,10 @@ body {
     height: 100%;
   }
 
+  .Teaservideo-padding {
+    padding:30px;
+  }
+
   /*------------------history page----------------*/
   .history-wrapper {
     text-align: center;
