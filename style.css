@@ -401,6 +401,11 @@ body {
     height: 100%;
   }
 
+  .Teaservideo-padding {
+    padding:30px;
+  }
+
+
   .history-wrapper-sp {
     padding: 30px;
     text-align: center;
