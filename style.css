@@ -371,14 +371,12 @@ body {
   }
 
   .contents-wrapper2 {
-    background-attachment: fixed;
-    padding: 30px;
     background-image: url("https://motohiro4649.github.io/ojisantokomusume/img/page_250201_SP_08.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
     background-color: #4a4a4b;
     display: block;
     justify-content: center;
