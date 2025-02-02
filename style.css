@@ -312,6 +312,22 @@ body {
     display: none;
   }
 
+  .goods-container a{
+    transition: all 0.3s;
+  }
+
+
+
+  .goods-container a:hover {
+    opacity: 1;
+    transition: all 0.5s;
+    transform: scale(1.07);
+  }
+
+  .goods-container a {
+    padding: 30px 0 30px 0;
+  }
+
 }
 
 /*------------------SP----------------------*/
