@@ -305,7 +305,12 @@ body {
   }
 
   .goods-container {
-    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
   }
 
   .goods-container-sp {
