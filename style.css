@@ -337,7 +337,8 @@ body {
   .notice {
     font-size:16px;
     color:#4a4a4b;
-    padding:0 0 100 0px;
+    padding:0 100px 100px 100px;
+    margin:0;
   }
 
 }
@@ -501,6 +502,7 @@ body {
     font-size:8px;
     color:#4a4a4b;
     padding:0 30px 0 30px;
+    margin:0;
   }
 
 }
