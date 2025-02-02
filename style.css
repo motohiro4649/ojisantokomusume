@@ -456,10 +456,12 @@ body {
   /*------------------Goods page----------------*/
 
   .goods-container {
+    text-align: center;
     display: none;
   }
 
   .goods-container-sp {
+    text-align: center;
     display: block;
   }
 }
