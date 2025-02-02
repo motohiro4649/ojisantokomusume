@@ -302,6 +302,7 @@ body {
   /*------------------Goods page----------------*/
   .goods-wrapper {
     text-align: center;
+    position: relative;
   }
 
   .goods-container {
@@ -331,6 +332,14 @@ body {
 
   .goods-container a {
     padding: 30px 0 30px 0;
+  }
+
+  .notice {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    botom:20%;
   }
 
 }
