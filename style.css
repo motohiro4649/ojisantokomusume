@@ -8,7 +8,6 @@ body {
   margin: 0;
   padding: 0;
   color: #fff;
-  overflow: hidden;
 }
 
 @media screen and (min-width: 480px) {
